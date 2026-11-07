@@ -1,0 +1,9 @@
+{
+  "id": "ob-pty",
+  "name": "PTY Terminal",
+  "version": "0.1.0",
+  "minAppVersion": "1.4.0",
+  "description": "ノート内に ```term <pty path>``` でターミナルを埋め込み、記録したコマンド入出力をコードブロックとして挿入します。",
+  "author": "riiimparm",
+  "isDesktopOnly": true
+}

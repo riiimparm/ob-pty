@@ -1,0 +1,39 @@
+.obpty {
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 6px;
+  overflow: hidden;
+}
+.obpty-bar {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 6px;
+  background: var(--background-secondary);
+  font-size: 11px;
+}
+.obpty-path {
+  font-family: var(--font-monospace);
+  color: var(--text-muted);
+}
+.obpty-sel {
+  flex: 1;
+  min-width: 0;
+  font-size: 11px;
+}
+.obpty-bar button {
+  padding: 2px 8px;
+  font-size: 11px;
+}
+.obpty-term {
+  height: 320px;
+  resize: vertical;
+  overflow: auto;
+  padding: 4px;
+}
+.obpty-dead {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px;
+  color: var(--text-muted);
+}

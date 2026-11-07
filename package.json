@@ -1,0 +1,22 @@
+{
+  "name": "ob-pty",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "css": "cat node_modules/@xterm/xterm/css/xterm.css styles.src.css > styles.css",
+    "build": "esbuild main.ts --bundle --platform=node --format=cjs --target=es2020 --external:obsidian --outfile=main.js && npm run css",
+    "dev": "npm run css && esbuild main.ts --bundle --platform=node --format=cjs --target=es2020 --external:obsidian --outfile=main.js --watch",
+    "test": "node test.mjs"
+  },
+  "dependencies": {
+    "@xterm/addon-fit": "0.10.0",
+    "@xterm/xterm": "5.5.0"
+  },
+  "devDependencies": {
+    "@types/node": "22.10.2",
+    "@xterm/headless": "^5.5.0",
+    "esbuild": "0.24.2",
+    "obsidian": "1.7.2",
+    "typescript": "5.7.2"
+  }
+}
